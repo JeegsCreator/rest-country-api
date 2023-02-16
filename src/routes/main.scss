@@ -1,0 +1,36 @@
+$dark-blue: hsl(209, 23%, 22%);
+$dark-background: hsl(207, 26%, 17%);
+$dark-text: hsl(200, 15%, 8%);
+$dark-gray: hsl(0, 0%, 52%);
+$light-background: hsl(0, 0%, 98%);
+$white: #FFFFFF;
+$box-shadow: 0px 0px 20px #00000020;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:global(body){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    color: $dark-text;
+    transition: background-color .2s;
+    background-color: $light-background;
+}
+
+:global(body.dark){
+    background-color: $dark-background;
+    color: $white;
+}
+
+:global(:root){
+    font-size: 62.5%;
+}
